@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return ('hola mi nombre es ' + str);
+  return str;
 }
 
 function suma(x, y) {
@@ -244,8 +244,8 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  var areaT
-  return (areaT = base * altura)
+  var areaT;
+  return (areaT = ((base * altura)/2));
 }
 
 
@@ -264,13 +264,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-    if(letra.length === 1)
+    if((letra.length == 1) && (letra == 'a' || letra =='e' || letra == 'i' || letra =='o' || letra == 'u'))
     {
-      return ('Es Vocal')
+      return ('Es vocal')
     }
     else if(letra.length > 1)
     {
-      return ('Ingreso mas de un caracter')
+      return ('Dato incorrecto')
     }
   return ('Dato incorrecto')
 }
