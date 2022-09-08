@@ -29,7 +29,6 @@ function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
   return ('hola mi nombre es ' + str);
-  
 }
 
 function suma(x, y) {
@@ -181,7 +180,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  num = Math.random(num);
+  var num = Math.random(num);
   return num;
 }
 
@@ -247,7 +246,6 @@ function areaDelTriangulo(base, altura){
   //Escribe tu código aquí
   var areaT
   return (areaT = base * altura)
-
 }
 
 
@@ -266,7 +264,7 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-    if(letra.length == 1)
+    if(letra.length === 1)
     {
       return ('Es Vocal')
     }
