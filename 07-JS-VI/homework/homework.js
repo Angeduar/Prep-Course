@@ -58,21 +58,14 @@ function filter(array) {
   //Tu código:
   var arrayS = new Array();
   var j=0;
-  /*for(i=0; i<array.length; i++)
+  for(i=0; i<array.length; i++)
   {
     if(array[i].charAt(0) == 'a')
     {
       arrayS[j] = array[i];
       j++;
     }
-  }*/
-  var arrayS = array.map(function(elemen) {
-    if(elemen.charAt(0) == 'a')
-    {
-    return elemen;
-    }
-    return delete elemen;
-  });
+  }
   return arrayS;
 }
 
